@@ -1,0 +1,109 @@
+
+.contactbanner{
+    background: url('../../assets/contactbanner.jpg');
+}
+
+
+
+.container {
+    display: flex;
+    width: 90%;
+    margin: 80px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left, .right {
+    
+    padding: 20px;
+}
+
+.left {
+    background-color: #f8f8f8;
+    flex-basis: 40%;
+}
+
+.right {
+    background-color: #fff;
+    flex-basis: 60%;
+}
+.left p{
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+    width: 90%;
+}
+
+.left img{
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+}
+
+
+.right img{
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    /* display: block; */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 15px;
+    /* border: 1px solid #ccc; */
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+
+
+
+.right span{
+    display: block;
+    margin: 20px 0px;
+}
+
+
+
+@media(max-width: 950px){
+    .left {
+        background-color: #f8f8f8;
+        flex-basis: 35%;
+    }
+    
+    .right {
+        background-color: #fff;
+        flex-basis: 65%;
+    }
+}
+
+@media(max-width: 700px){
+  .container{
+    display: block;
+  }
+}

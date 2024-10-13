@@ -1,0 +1,143 @@
+.admin-chat-wrapper {
+  display: flex;
+}
+
+.user-list {
+  width: 250px;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  
+}
+
+.user-list ul {
+  list-style: none;
+  padding: 0;
+  max-height: 70vh;
+
+  overflow-y: auto;
+}
+
+.user-list li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  text-transform: capitalize;
+}
+
+.user-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.chat-container {
+  flex: 1;
+  padding: 10px;
+}
+
+.messages-container-admin {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.messages-container-user {
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.message-bubble {
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+
+
+  display: inline-block;
+
+  
+  word-wrap: break-word;
+}
+
+.message-bubble-main{
+  display: block;
+}
+
+.admin-bubble {
+  align-self: flex-end;
+
+  background-color: rgb(72,179,216); /* Dark blue for admin messages */
+  color: #fff;
+  
+  text-align: right;
+}
+
+.user-bubble {
+  color: #000;
+  align-self: flex-start;
+ 
+  /* background-color: #e0e0e0; */
+  
+ 
+}
+
+.color-user{
+  color: white ;
+  background-color: rgb(199,77,214);
+}
+
+
+
+.message-form {
+  display: flex;
+
+  flex-direction: row;
+  
+}
+
+.message-input {
+  padding: 10px;
+  flex: 11 ;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  
+}
+
+.send-button {
+  flex: 1 ;
+  
+  border: none;
+  cursor: pointer;
+  margin-right: 16px;
+
+}
+
+.send-button img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+/* Target a specific container with a class or ID */
+.my-scrollable-div::-webkit-scrollbar {
+  width: 8px;
+}
+
+.my-scrollable-div::-webkit-scrollbar-thumb {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.my-scrollable-div::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* For Firefox */
+.my-scrollable-div {
+  scrollbar-width:thin;
+  scrollbar-color: #ececec #ffffff;
+}
+
+
+.my-scrollable-userAdmin-div {
+  scrollbar-width:none;
+}

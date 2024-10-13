@@ -1,0 +1,190 @@
+nav {
+  /* background-color: #333; */
+  color: #fff;
+  /* position: fixed; */
+  /* width: 50%; */
+  /* top: 20; */
+  /* right: 10; */
+  /* left: 0; */
+ display: flex;
+ align-items: center;
+  /* padding: 4px 0; */
+  z-index: 100;
+  /* height: 60px; */
+  background-color: rgb(72, 179, 216);
+}
+
+
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 12px;
+  /* height: 100%; */
+}
+
+nav ul li a{
+  font-size: 16px;
+}
+
+
+
+/* .navbutton {
+  background: #fff;
+  color: #212121;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.dark-nav {
+  transition: all 0.5s ease;
+}
+
+nav h2 {
+  font-size: 28px;
+}
+
+.open {
+  display: none;
+}
+
+
+
+.active{
+  display: none;
+}
+
+nav ul li a:hover {
+
+ /* transition: all 1000ms ease; */
+
+}
+
+
+/* ----------------media queries------------------ */
+
+@media (max-width: 1000px) {
+  nav ul li {
+    margin: 5px 14px;
+  }
+
+  nav h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 865px) {
+  nav {
+    height: 40px;
+    width: 54px;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: #000;
+    padding: 180px 40px;
+    transition: all 1000ms ease;
+    z-index: -1;
+    width: 100%;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 14px;
+ 
+  }
+
+  .open {
+    display: block;
+    margin-left: 10px;
+    width:34px;
+    height: 30px;
+    cursor: pointer;
+   
+    /* margin: 20px; */
+  }
+
+ 
+  
+
+  .displayDes {
+    display: none;
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    opacity: 1;
+    transition: all 1500ms ease;
+    display: block;
+    width: 100%;
+    transform: translateY(-200px);
+  }
+
+  .hideMobileNav {
+    top: -100vh;
+    
+    }
+    
+  .my{
+    
+    transform: translateY(0px);
+
+  }
+  .navbutton {
+    background: none;
+    font-size: 60px;
+    font-weight: 900;
+    padding: 0;
+    color: #fff;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    display: block;
+  }
+
+  .anchor {
+    opacity: 0;
+  }
+
+  .h2Opacity {
+    opacity: 1;
+    transition: all 3000ms ease;
+  }
+}
+
+@media(max-width: 600px){
+  nav ul li a {
+    font-size: 50px;
+   
+  }
+
+  .navbutton {
+    font-size: 50px;
+   
+  }
+}
+@media(max-width: 420px){
+  nav ul li a {
+    font-size: 40px;
+
+   
+  }
+
+  .navbutton {
+    font-size: 40px;
+   
+  }
+}

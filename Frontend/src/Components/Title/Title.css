@@ -1,0 +1,20 @@
+.Title{
+    text-align: center;
+    margin: 70px 0 30px;
+    
+}
+
+.Title h2{
+font-size: 32px;
+margin-bottom: 10px;
+text-transform: uppercase;
+font-weight: 600;
+/* color: #000f38; */
+}
+
+
+@media (max-width:420px){
+    .Title h2{
+        font-size: 24px;
+    }
+}
